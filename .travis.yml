@@ -8,7 +8,7 @@ before_install:
 podfile: source/Podfile
 script:
 - |
-  source cd devops
+  cd devops
   fastlane run clean_build_artifacts
   fastlane clean_xcode
   fastlane tests
