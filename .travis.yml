@@ -1,3 +1,6 @@
 language:
   - swift
 osx_image: xcode10.1
+script:
+    - fastlane test1
+    - fastlane tests
