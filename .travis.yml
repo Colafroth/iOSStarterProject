@@ -1,6 +1,14 @@
 language:
   - swift
 osx_image: xcode10.1
+before_install:
+- |
+  brew update
+  gem install xcpretty -N --no-ri --no-doc
+  gem update fastlane
+install: pod install
 script:
-    - fastlane test1
-    - fastlane tests
+- |
+  fastlane run clean_build_artifacts
+  fastlane test1
+  fastlane tests
