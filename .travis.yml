@@ -5,7 +5,7 @@ before_install:
 - |
   brew update
   gem update fastlane
-install: pod install
+podfile: source/Podfile
 script:
 - |
   fastlane run clean_build_artifacts
