@@ -9,5 +9,5 @@ install: pod install
 script:
 - |
   fastlane run clean_build_artifacts
-  fastlane test1
+  fastlane clean_xcode
   fastlane tests
